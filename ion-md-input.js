@@ -46,7 +46,12 @@ angular.module('ionMdInput', [])
         }
       });
 
+      var unwatch = null;
       var cleanUp = function() {
+        if (unwatch) {
+          unwatch();
+          unwatch = null;
+        }
         ionic.off('$destroy', cleanUp, element[0]);
       };
       // add listener
@@ -80,6 +85,15 @@ angular.module('ionMdInput', [])
         // Here we are saying, on 'blur', call toggleClass, on mdInput
         ionic.on('blur', toggleClass, mdInput);
 
+        // Watch the input value to call toggleClass when it changes
+        // via code
+        unwatch = $scope.$watch(function(scope) {
+            return mdInput.value;
+          }, function(oldValue, newValue) {
+          if (oldValue !== newValue) {
+            toggleClass.apply(mdInput);
+          }
+        });
       };
 
     }

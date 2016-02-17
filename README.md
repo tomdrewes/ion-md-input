@@ -1,7 +1,7 @@
-Version 0.0.2
+Version 1.0.5
 
 # ion-md-input
-A material design inspired text input for Ionic Framework
+A material design inspired text input for Ionic Framework - forked to update the CSS state when the input value is changed programmatically.
 
 ## Usage
 ```
@@ -37,4 +37,4 @@ angular.module('ionicApp', ['ionic', 'ionMdInput'])
 
 Talk is cheap, where's the code...
 
-[Demo of the input](http://codepen.io/mhartington/pen/xbgVjb?editors=010)
+[Demo of the input](http://codepen.io/tomdrewes/pen/EPJvgQ)
