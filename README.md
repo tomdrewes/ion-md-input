@@ -1,7 +1,7 @@
-Version 1.0.5
+Version 1.0.6
 
 # ion-md-input
-A material design inspired text input for Ionic Framework - forked to update the CSS state when the input value is changed programmatically.
+A material design inspired text input for Ionic Framework - forked to update the CSS state when the input value is changed programmatically.  The units in the stylesheet have also been changed to rems.
 
 ## Usage
 ```
