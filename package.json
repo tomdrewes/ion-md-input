@@ -2,6 +2,7 @@
   "name": "ion-md-input",
   "version": "1.0.6",
   "description": "material design inspired text input for ionic framework",
+  "main": "ion-md-input.js",
   "devDependencies": {
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
